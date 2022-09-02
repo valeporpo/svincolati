@@ -8,8 +8,7 @@ export default function Header() {
               <span className="league-name">FantaFavaro</span>
             </div>
             <ul className="nav-items">
-              <li><a href="#">Squadre</a></li>
-              <li><a href="#">Svincolati</a></li>
+              <li><a href="https://fantafavaro-teams.herokuapp.com/">Squadre</a></li>
             </ul>
          </nav>
        </header>

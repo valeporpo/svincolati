@@ -8,6 +8,7 @@ export default function TableHeaderColumn(props) {
         let newOrder = order == 'asc' ? 'desc' : 'asc'
         setOrder(newOrder)
         props.handle(props.attr, order, props.type)
+        props.refresh()
     }
 
     return (

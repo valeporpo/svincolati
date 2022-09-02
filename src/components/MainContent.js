@@ -97,7 +97,6 @@ export default function MainContent() {
     }
 
     function orderPlayers(key, direction, type) {
-        //console.log(direction)
         setOrderKey(key)
         setOrderDirection(direction)
         setOrderType(type)
@@ -107,11 +106,15 @@ export default function MainContent() {
                                  .filter(applyFilterRule)
     return (
             <div className='player-table'>
-                <Form handle={handleFilter} 
+                <Form handle={handleFilter}
+                      refresh={retrievePlayers}
                 />
-                <TableHeader handle={orderPlayers}/>
+                <TableHeader  handle={orderPlayers}
+                              refresh={retrievePlayers}
+                />
                 {selectedPlayers.map((player) => <Row player={player}
                                                       key={player.id}
+                                                      
                                                  />
                             )
                 }   

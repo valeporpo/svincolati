@@ -6,6 +6,7 @@ export default function Form(props) {
     function handleChange(event) {
         setString(event.target.value)
         props.handle(event.target.value)
+        props.refresh()
     }
 
     return (

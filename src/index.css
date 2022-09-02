@@ -167,6 +167,7 @@ div.player-table > div.player-row > div.player-role > span {
     font-size: calc(4px + 1vw);
 }
 
+
 div.player-table > div.player-row > div.player-role.double-role > span {
     margin-left: -3px;
     margin-right: -3px;
